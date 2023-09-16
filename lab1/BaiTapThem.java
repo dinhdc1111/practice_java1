@@ -8,7 +8,7 @@ public class BaiTapThem {
         System.out.print("Nhập họ và tên của bạn: ");
         String myName = sc.nextLine();
         System.out.print("Nhập tuổi của bạn: ");
-        int myOld = sc.nextInt();
+        byte myOld = sc.nextByte();
         sc.nextLine();
         System.out.print("Nhập lớp của bạn: ");
         String myClass = sc.nextLine();
