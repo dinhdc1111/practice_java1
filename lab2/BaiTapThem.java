@@ -35,13 +35,8 @@ public class BaiTapThem {
                     System.out.println("Kết quả: " + nhan);
                     break;
                 case 4:
-                    if (b != 0) {
-                        double chia = (double) a / b;
-                        System.out.println("Kết quả: " + chia);
-                    } else {
-                        System.out.println("Không thể chia cho số 0");
-                    }
-                    break;
+                    String result = (b != 0) ? "Kết quả: " + ((double) a / b) : "Không thể chia cho số 0";
+                    System.out.println(result);
                 case 5:
                     System.out.println("Kết thúc chương trình!");
                     break;
