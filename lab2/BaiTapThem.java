@@ -4,13 +4,10 @@ import java.util.Scanner;
 
 /**
  * BaiTapThem
- * Chọn chức năng +, - , x, /
- * Input: a, b
- * Output: result
  */
 public class BaiTapThem {
     private static Scanner scanner = new Scanner(System.in);
-
+    // Cộng, trừ, nhân, chia 2 số nhập từ bàn phím
     public static void main(String[] args) {
         int choice;
         do {

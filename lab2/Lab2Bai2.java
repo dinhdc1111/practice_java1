@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Lab2Bai2
  */
 public class Lab2Bai2 {
-
+    // Giải phương trình bậc hai
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập hệ số a: ");

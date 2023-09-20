@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Lab2Bai4 {
     private static Scanner scanner = new Scanner(System.in);
-
+    // Tạo menu với 3 chức năng: giải PT bậc 1, giải PT bậc 2 và tính tiền điện
     public static void main(String[] args) {
         int choice;
         do {

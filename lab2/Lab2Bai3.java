@@ -3,6 +3,7 @@ package lab2;
 import java.util.Scanner;
 
 public class Lab2Bai3 {
+    // Tính tiền điện
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập số điện sử dụng trong tháng: ");

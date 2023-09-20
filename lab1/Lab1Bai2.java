@@ -3,6 +3,7 @@ package lab1;
 import java.util.Scanner;
 
 public class Lab1Bai2 {
+    // Chu vi, diện tích và cạnh nhỏ nhất của hình chữ nhật
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập chiều dài: ");

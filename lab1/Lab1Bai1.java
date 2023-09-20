@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Lab1Bai1
  */
 public class Lab1Bai1 {
-
+    // Thông tin sinh viên
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập họ và tên: ");
