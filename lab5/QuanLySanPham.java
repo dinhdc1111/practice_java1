@@ -62,7 +62,7 @@ public class QuanLySanPham {
     }
 
     public static void nhap() {
-        scanner.nextLine(); // Đọc ký tự Enter còn lại từ lần nhập trước
+        scanner.nextLine();
         while (true) {
             System.out.print("Nhập tên sản phẩm (hoặc ấn Enter để kết thúc): ");
             String tenSanPham = scanner.nextLine();
@@ -99,7 +99,7 @@ public class QuanLySanPham {
     }
 
     public static void xoa() {
-        scanner.nextLine(); // Đọc ký tự Enter
+        scanner.nextLine();
         System.out.print("Nhập tên sản phẩm cần xóa: ");
         String tenSanPhamXoa = scanner.nextLine();
 
