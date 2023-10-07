@@ -1,7 +1,10 @@
 package lab6;
 
 import java.util.Scanner;
-
+/**
+ * Nhập họ và tên từ bàn phím.
+ * Xuất tên, họ và tên đệm ra màn hình trong đó tên và họ xuất IN HOA.
+ */
 public class Lab6Bai1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

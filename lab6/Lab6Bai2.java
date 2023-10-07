@@ -2,7 +2,10 @@ package lab6;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/**
+ * Nhập vào mảng 5 sản phẩm (mỗi sản phẩm gồm tên, giá và hãng).
+ * Xuất thông tin các sản phẩm có hãng là Nokia
+ */
 public class Lab6Bai2 {
     static class SanPham {
         private String tenSp;

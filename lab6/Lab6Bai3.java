@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/**
+ * Nhập mảng 5 sinh viên (mỗi sinh viên gồm họ tên, email, số điện thoại, chứng minh nhân dân)
+ * Kiểm tra và thông báo lỗi nếu nhập không đúng định dạng email, số điện thoại và CMND.
+ */
 public class Lab6Bai3 {
     static class SinhVien {
         private String hoTen;
