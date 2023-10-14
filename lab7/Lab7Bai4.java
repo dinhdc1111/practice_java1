@@ -58,49 +58,20 @@ public class Lab7Bai4 {
             System.out.println("5. Kết thúc");
             System.out.print("Nhập lựa chọn của bạn: ");
             choice = scanner.nextInt();
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
-                    System.out.print("Nhập số lượng sinh viên: ");
-                    int n = scanner.nextInt();
-                    scanner.nextLine();
-                    for (int i = 0; i < n; i++) {
-                        System.out.print("Nhập tên sinh viên " + (i + 1) + ": ");
-                        String ten = scanner.nextLine();
-                        System.out.print("Nhập điểm của sinh viên " + (i + 1) + ": ");
-                        double diem = scanner.nextDouble();
-                        scanner.nextLine();
-                        danhSachSinhVien.add(new SinhVien(ten, diem));
-                    }
+                    Nhap(danhSachSinhVien, scanner);
                     break;
                 case 2:
-                    System.out.println("Danh sách sinh viên:");
-                    for (SinhVien sv : danhSachSinhVien) {
-                        System.out.println(
-                                "Tên: " + sv.getTen() + ", Điểm: " + sv.getDiem() + ", Học lực: " + sv.getHocLuc());
-                    }
+                    Xuat(danhSachSinhVien);
                     break;
                 case 3:
-                    System.out.println("Danh sách sinh viên có học lực giỏi:");
-                    for (SinhVien sv : danhSachSinhVien) {
-                        if (sv.getHocLuc().equals("Giỏi")) {
-                            System.out.println(
-                                    "Tên: " + sv.getTen() + ", Điểm: " + sv.getDiem() + ", Học lực: " + sv.getHocLuc());
-                        }
-                    }
+                    SinhVienGioi(danhSachSinhVien);
                     break;
                 case 4:
-                    Collections.sort(danhSachSinhVien, new Comparator<SinhVien>() {
-                        @Override
-                        public int compare(SinhVien sv1, SinhVien sv2) {
-                            return Double.compare(sv2.getDiem(), sv1.getDiem());
-                        }
-                    });
-                    System.out.println("Danh sách sinh viên sau khi sắp xếp theo điểm:");
-                    for (SinhVien sv : danhSachSinhVien) {
-                        System.out.println(
-                                "Tên: " + sv.getTen() + ", Điểm: " + sv.getDiem() + ", Học lực: " + sv.getHocLuc());
-                    }
+                    SapXep(danhSachSinhVien);
                     break;
                 case 5:
                     System.out.println("Kết thúc chương trình.");
@@ -109,5 +80,51 @@ public class Lab7Bai4 {
                     System.out.println("Lựa chọn không hợp lệ. Vui lòng chọn lại.");
             }
         } while (choice != 5);
+    }
+
+    public static void Nhap(ArrayList<SinhVien> danhSachSinhVien, Scanner scanner) {
+        System.out.print("Nhập số lượng sinh viên: ");
+        int n = scanner.nextInt();
+        scanner.nextLine();
+        for (int i = 0; i < n; i++) {
+            System.out.print("Nhập tên sinh viên " + (i + 1) + ": ");
+            String ten = scanner.nextLine();
+            System.out.print("Nhập điểm của sinh viên " + (i + 1) + ": ");
+            double diem = scanner.nextDouble();
+            scanner.nextLine();
+            danhSachSinhVien.add(new SinhVien(ten, diem));
+        }
+    }
+
+    public static void Xuat(ArrayList<SinhVien> danhSachSinhVien) {
+        System.out.println("Danh sách sinh viên:");
+        for (SinhVien sv : danhSachSinhVien) {
+            System.out.println(
+                    "Tên: " + sv.getTen() + ", Điểm: " + sv.getDiem() + ", Học lực: " + sv.getHocLuc());
+        }
+    }
+
+    public static void SinhVienGioi(ArrayList<SinhVien> danhSachSinhVien) {
+        System.out.println("Danh sách sinh viên có học lực giỏi:");
+        for (SinhVien sv : danhSachSinhVien) {
+            if (sv.getHocLuc().equals("Giỏi")) {
+                System.out.println(
+                        "Tên: " + sv.getTen() + ", Điểm: " + sv.getDiem() + ", Học lực: " + sv.getHocLuc());
+            }
+        }
+    }
+
+    public static void SapXep(ArrayList<SinhVien> danhSachSinhVien) {
+        Collections.sort(danhSachSinhVien, new Comparator<SinhVien>() {
+            @Override
+            public int compare(SinhVien sv1, SinhVien sv2) {
+                return Double.compare(sv2.getDiem(), sv1.getDiem());
+            }
+        });
+        System.out.println("Danh sách sinh viên sau khi sắp xếp theo điểm:");
+        for (SinhVien sv : danhSachSinhVien) {
+            System.out.println(
+                    "Tên: " + sv.getTen() + ", Điểm: " + sv.getDiem() + ", Học lực: " + sv.getHocLuc());
+        }
     }
 }
