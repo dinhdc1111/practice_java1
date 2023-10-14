@@ -23,8 +23,9 @@ public class TruongPhong extends NhanVien {
     }
 
     @Override
-    public void NhapThongTin(Scanner scanner) {
-        super.NhapThongTin(scanner);
+    public void NhapThongTin() {
+        super.NhapThongTin();
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập lương trách nhiệm: ");
         trachNhiem = scanner.nextDouble();
         scanner.nextLine();

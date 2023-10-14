@@ -40,7 +40,8 @@ public abstract class NhanVien {
         this.manv = manv;
     }
 
-    public void NhapThongTin(Scanner scanner) {
+    public void NhapThongTin() {
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập mã nhân viên: ");
         manv = scanner.nextLine();
         System.out.print("Nhập tên nhân viên: ");

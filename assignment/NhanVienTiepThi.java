@@ -18,8 +18,9 @@ public class NhanVienTiepThi extends NhanVien {
 
     // Override method
     @Override
-    public void NhapThongTin(Scanner scanner) {
-        super.NhapThongTin(scanner);
+    public void NhapThongTin() {
+        super.NhapThongTin();
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập doanh số: ");
         doanhSo = scanner.nextDouble();
         System.out.print("Nhập hoa hồng: ");
