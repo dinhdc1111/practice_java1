@@ -2,6 +2,7 @@ package lab7;
 
 /**
  * Lab7Bai1
+ * Viết chương trình nhập 2 hình chữ nhật và một hình vuông sau đó xuất ra.
  */
 class ChuNhat {
     protected double rong;
