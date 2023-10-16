@@ -31,7 +31,7 @@ public class NhanVienTiepThi extends NhanVien {
     @Override
     public void XuatThongTin() {
         super.XuatThongTin();
-        System.out.printf("- Doanh số: " + doanhSo + "- Hoa hồng: " + hoaHong);
+        System.out.printf(" - Doanh số: " + doanhSo + " - Hoa hồng: " + hoaHong);
     }
 
     public void setDoanhSo(double doanhSo) {
@@ -52,7 +52,7 @@ public class NhanVienTiepThi extends NhanVien {
 
     @Override
     public double getThuNhap() {
-        return super.getLuong() + doanhSo + hoaHong;
+        return super.getLuong() + doanhSo * hoaHong / 100;
     }
 
 }

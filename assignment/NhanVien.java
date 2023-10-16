@@ -51,7 +51,7 @@ public abstract class NhanVien {
     }
 
     public void XuatThongTin() {
-        System.out.printf("\nMã: " + manv + "- Họ tên: " + hoten + "- Lương: " + luong);
+        System.out.printf("\nMã: " + manv + " - Họ tên: " + hoten + " - Lương: " + luong + " - Thuế: " + getThueTN() + " - Lương: " + getThuNhap());
     }
 
     public abstract double getThuNhap();

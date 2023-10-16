@@ -33,7 +33,7 @@ public class TruongPhong extends NhanVien {
 
     public void XuatThongTin() {
         super.XuatThongTin();
-        System.out.printf("- Trách nhiệm: " + trachNhiem);
+        System.out.printf(" - Trách nhiệm: " + trachNhiem);
     }
 
     @Override
