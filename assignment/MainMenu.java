@@ -38,18 +38,18 @@ public class MainMenu {
                 case 5:
                     chucNangMenu.ChucNang5();
                     break;
-                // case 6:
-                // chucNangMenu.ChucNang6();
-                // break;
-                // case 7:
-                // chucNangMenu.ChucNang7();
-                // break;
-                // case 8:
-                // chucNangMenu.ChucNang8();
-                // break;
-                // case 9:
-                // chucNangMenu.ChucNang9();
-                // break;
+                case 6:
+                    chucNangMenu.ChucNang6();
+                    break;
+                case 7:
+                    chucNangMenu.ChucNang7();
+                    break;
+                case 8:
+                    chucNangMenu.ChucNang8();
+                    break;
+                case 9:
+                    chucNangMenu.ChucNang9();
+                    break;
                 case 0:
                     System.out.println("Chương trình kết thúc.");
                     break;
